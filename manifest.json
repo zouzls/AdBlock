@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "AdBlock",
+  "description": "csdn-baidu广告屏蔽器",
+  "version": "1.0",
+  "icons":{ 
+    "16": "images/moon16.png",             
+    "48": "images/moon48.png",            
+    "128": "images/moon128.png" 
+  },  
+  "browser_action": {
+     "default_icon": {
+               "19": "images/moon19.png",
+               "38": "images/moon38.png"
+          },
+    "default_title": "csdn广告屏蔽插件"
+  },
+   "background": {
+    "scripts": ["js/background.js"]
+   },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+  	"*://*.baidu.com/*","*://*.53kf.com/*"
+  ]
+}
